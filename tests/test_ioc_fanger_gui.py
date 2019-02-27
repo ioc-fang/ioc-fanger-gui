@@ -15,5 +15,17 @@ class IocFangerGuiTestCase(unittest.TestCase):
         rv = self.app.get('/')
         self.assertIn('IOC Fanger GUI', rv.data.decode())
         self.assertIn('GUI for fanging and defanging indicators of compromise.', rv.data.decode())
-        self.assertIn('Welcome!', rv.data.decode())
-        self.assertIn('This is the start of something great.', rv.data.decode())
+
+    def test_fang(self):
+        rv = self.app.post('/process', data={
+            'text': 'example[.]com',
+            'action': 'fang'
+        })
+        assert rv.data.decode() == 'example.com'
+
+    def test_defang(self):
+        rv = self.app.post('/process', data={
+            'text': 'http://example.com/',
+            'action': 'defang'
+        })
+        assert rv.data.decode() == 'hXXp://example[.]com/'
