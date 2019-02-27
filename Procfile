@@ -1,0 +1,1 @@
+web: gunicorn ioc_fanger_gui.ioc_fanger_gui:app --log-file=-

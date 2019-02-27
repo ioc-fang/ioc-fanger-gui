@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <span class="{{ category }}">{{ message }}</span>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <div>
+        Enter some text below to fang/defang <a href="https://github.com/fhightower/ioc-finder">https://github.com/fhightower/ioc-finder</a> project:
+        <br><br>
+        <form action="{{ url_for('process_text') }}" method="post">
+            <textarea type="text" name="text" placeholder="Enter some text from which indicators of compromise will be parsed..." rows="20"></textarea>
+
+            <fieldset class="large-5 cell">
+                <legend>Select an action</legend>
+                <input type="radio" name="action" value="fang" id="fangAction" checked="checked"><label for="fangAction">Fang</label>
+                <input type="radio" name="action" value="defang" id="defangAction"><label for="defangAction">Defang</label>
+            </fieldset>
+
+            <input type="submit" class="button blue">
+        </form>
+
+        <br><br>
+    </div>
+{% endblock %}
