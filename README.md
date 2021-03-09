@@ -6,7 +6,7 @@ GUI for fanging and defanging indicators of compromise. This is available at [ht
 
 ## Credits
 
-This app was created using Floyd Hightower's Flask template: [https://gitlab.com/fhightower-templates/flask-template](https://gitlab.com/fhightower-templates/flask-template) which allows you to create a Flask app in 30-60 seconds (including Postresql support and potential Heroku deployment). This template uses [cookiecutter](https://github.com/audreyr/cookiecutter) to make it quick, easy, and enjoyable to create projects from templates. If you have not seen either of these projects, you should check them out!
+This app was created using Floyd Hightower's Flask template: [https://github.com/fhightower-templates/flask-template](https://github.com/fhightower-templates/flask-template) which allows you to create a Flask app in 30-60 seconds (including Postresql support and potential Heroku deployment). This template uses [cookiecutter](https://github.com/audreyr/cookiecutter) to make it quick, easy, and enjoyable to create projects from templates. If you have not seen either of these projects, you should check them out!
 
 ## Quick Start
 
