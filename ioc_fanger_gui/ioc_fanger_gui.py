@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from flask import flash, Flask, render_template, redirect, request, url_for, jsonify
 import ioc_fanger
 
@@ -10,7 +7,7 @@ app.secret_key = 'abc'
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", version='3.2.2')
 
 
 @app.route("/process", methods=['POST'])

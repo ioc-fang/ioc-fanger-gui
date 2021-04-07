@@ -9,7 +9,7 @@
     {% endwith %}
 
     <div>
-        Enter some text below to fang/defang <a href="https://github.com/ioc-fang/ioc_fanger">https://github.com/ioc-fang/ioc_fanger</a> project:
+        Enter some text below to fang/defang:
         <br><br>
         <form action="{{ url_for('process_text') }}" method="post">
             <textarea type="text" name="text" placeholder="Enter some text from which indicators of compromise will be parsed..." rows="20"></textarea>
@@ -22,6 +22,8 @@
 
             <input type="submit" class="button blue">
         </form>
+
+        <i>(This GUI is using <a href="https://github.com/ioc-fang/ioc_fanger">ioc-fanger</a> version {{ version }})</i>
 
         <br><br>
     </div>

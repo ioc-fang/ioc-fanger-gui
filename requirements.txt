@@ -1,4 +1,4 @@
 Flask
 gunicorn
 pytest
-ioc_fanger==3.2.0
+ioc_fanger==3.2.2
