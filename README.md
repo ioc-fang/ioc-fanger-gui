@@ -1,5 +1,9 @@
 # IOC Fanger GUI
 
+**NOTE:** This project has been deprecated in favor of the new, [interactive documentation](http://ioc-fanger.hightower.space).
+
+---
+
 [![Build Status](https://travis-ci.org/fhightower/ioc-fanger-gui.svg?branch=master)](https://travis-ci.org/fhightower/ioc-fanger-gui)
 
 GUI for fanging and defanging indicators of compromise. This is available at [http://ioc-fanger.hightower.space](http://ioc-fanger.hightower.space).
